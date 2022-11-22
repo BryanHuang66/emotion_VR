@@ -1,0 +1,6 @@
+tensorflow
+tqdm
+pandas
+librosa
+matplotlib
+openpyxl
