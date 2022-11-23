@@ -35,7 +35,7 @@ if args.process:
         np.save(os.path.join(NPYSAVEPATH,'train_label.npy'),trainlabel)
     if args.process == "valid":
         print('从文件提取训练集mfcc特征...')
-        trainset,trainlabel = extract_mfcc('dataset/train.xlsx',PROCESSWITHNOISE)
+        trainset,trainlabel = extract_mfcc('dataset/train.xlsx',False)
         print(f'生成训练集个数: {len(trainset)}')
         np.save(os.path.join(NPYSAVEPATH,'valid_set.npy'),trainset)
         np.save(os.path.join(NPYSAVEPATH,'valid_label.npy'),trainlabel)
